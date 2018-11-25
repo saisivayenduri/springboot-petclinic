@@ -11,7 +11,6 @@
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>2.1.0.RELEASE</version>
-	<relativePath>../pom.xml</relativePath>
   </parent>
   <name>petclinic</name>
 
@@ -109,12 +108,6 @@
       <artifactId>spring-boot-devtools</artifactId>
       <optional>true</optional>
     </dependency>
-	<dependency>
-	  <groupId>org.apache.maven.wagon</groupId>
-	  <artifactId>wagon</artifactId>
-	  <version>3.2.0</version>
-	  <type>pom</type>
-	</dependency>
   </dependencies>
 
   <build>
@@ -262,15 +255,5 @@
       </snapshots>
     </pluginRepository>
   </pluginRepositories>
-  
-  <distributionManagement>
-    <repository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>corp1</id>
-      <name>Corporate Repository</name>
-      <url>scp://repo/maven2</url>
-      <layout>default</layout>
-    </repository>
-  </distributionManagement>
-  
+
 </project>
